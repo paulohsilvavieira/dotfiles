@@ -1,0 +1,15 @@
+[user]
+	email = paulo.hvieira@contavoltz.com
+	name = Paulo Henrique
+[color]
+	ui = true
+[core]
+	editor = code --wait
+[alias]
+	s= !git status -s
+	c= !git commit -m
+	l= !git log --pretty=format:'%C(blue)%h%C(red)%d %C(yellow)%s %C(cyan)[%cn - (%ce)] %C(green)%cr'
+
+
+[init]
+	defaultBranch = main
