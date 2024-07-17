@@ -15,7 +15,6 @@ vim.g.loaded_netrwPlugin = 1
 vim.o.mousemoveevent = true
 vim.o.termguicolors = true
 vim.loader.enable()
-
 vim.wo.number = true
 
 vim.api.nvim_create_autocmd("BufWritePost", {
@@ -71,6 +70,9 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 
         if buf_ft == "dapui_watches" then
             vim.cmd("setlocal winbar=\\󰂥\\ Watches")
+        end
+        if buf_ft == "dapui_console" then
+            vim.cmd("setlocal winbar=\\ Console")
         end
     end,
 })

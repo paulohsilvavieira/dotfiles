@@ -1,0 +1,15 @@
+# ~/.tmuxinator/example.yml
+
+name: Ruby App
+root: .
+
+windows:
+  - nvim:
+      layout: main-vertical
+      panes:
+        - nvim .
+         
+  - lazygit: lazygit
+  - server: rake start:server
+  - rspec: rake run:test
+ 

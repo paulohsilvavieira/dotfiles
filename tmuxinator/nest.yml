@@ -1,0 +1,9 @@
+# /Users/paulohenrique/.config/tmuxinator/nest.yml
+
+name: Nest App
+root: .
+windows:
+  - nvim: nvim .
+  - git: lazygit
+  - server: npm run start:dev
+  - jest: npm test -- --watch

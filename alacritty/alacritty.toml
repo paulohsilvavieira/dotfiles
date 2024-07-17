@@ -1,0 +1,31 @@
+import = ["~/.config/alacritty/base16-dark.toml/themes/dracula.toml"]
+
+
+
+# Cursor style
+[cursor.style]
+shape = "Beam"
+
+# Font settings
+[font]
+size = 13.6
+
+[font.bold]
+family = "JetbrainsMono Nerd Font"
+style = "Regular"
+
+
+[font.italic]
+family = "JetbrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetbrainsMono Nerd Font"
+style = "Regular"
+
+# Window settings
+[window]
+opacity = 0.95
+option_as_alt= "Both"
+padding.x=2
+

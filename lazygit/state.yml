@@ -1,13 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/paulohvieira/Developer/gestao_cobranca/gc-backoffice-partner-front
-- /home/paulohvieira/.config/nvim
-- /home/paulohvieira/.config/zellij
-- /home/paulohvieira/Developer/gestao_cobranca/gc-hub
-- /home/paulohvieira/Developer/gestao_cobranca/gc-payment-executer
-- /home/paulohvieira/.config/lvim
+- /Users/paulohenrique/Developer/Study/MyBitcoin/home-broker-api-ruby
 startuppopupversion: 5
-customcommandshistory:
-- 'feat: test update batch order usecase'
+customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false

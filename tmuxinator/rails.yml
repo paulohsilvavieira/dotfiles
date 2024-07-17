@@ -1,0 +1,11 @@
+# ~/.tmuxinator/example.yml
+
+name: Rails App
+root: .
+
+windows:
+  - nvim: nvim .
+  - lazygit: lazygit
+  - server: rails s
+  - console: rails c
+  - shell:
