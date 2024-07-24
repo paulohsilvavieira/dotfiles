@@ -15,7 +15,6 @@ return {
                 extensions = {
                     "fzf",
                 },
-               
                 defaults = {
                     layout_strategy = "horizontal",
                     layout_config = {
@@ -33,22 +32,18 @@ return {
                 },
                 pickers = {
                     find_files = {
-                        hidden = true,
-    
-                        find_command = {"rg", "--files", "--hidden", "--glob=!**/.git/*", "--glob=!**/.idea/*",
-                                        "--glob=!**/.vscode/*", "--glob=!**/build/*", "--glob=!**/dist/*",
-                                        "--glob=!**/yarn.lock", "--glob=!**/package-lock.json"}
+                        find_command = { "rg", "--files", "--hidden", "--glob=**/**", "--glob=!**/.git/*", "--glob=!**/.idea/*",
+                        "--glob=!**/build/*", "--glob=!**/dist/*",
+                        "--glob=!**/node_modules/*",
+                        "--glob=!**/**lock**" }
                     },
                     live_grep = {
-                        additional_args={"--hidden", "--glob=!**/.git/*", "--glob=!**/.idea/*",
-                                        "--glob=!**/.vscode/*", "--glob=!**/build/*", "--glob=!**/dist/*",
-                                        "--glob=!**/yarn.lock", "--glob=!**/package-lock.json"},
-                       
-                       
+                        additional_args = { "--hidden",  "--glob=**/**", "--glob=!**/.git/*", "--glob=!**/.idea/*",
+                        "--glob=!**/build/*", "--glob=!**/dist/*",
+                        "--glob=!**/node_modules/*",
+                        "--glob=!**/**lock**" }
                     }
-    
                 }
-
             })
             require("telescope").load_extension("fzf")
 
